@@ -1,7 +1,6 @@
-#include "Pila_max_vector.h"
 using namespace std;
 
-template <typename Tbase>
+template <typename Tbase> 
 bool Pila_max_vector<Tbase>::vacia() const {
     return pila.empty();
 }
