@@ -1,6 +1,6 @@
 /**
  * @file Pila_max_cola.h
- * @brief Fichero cabecera del TDA Pila_max_Cola
+ * @brief Fichero cabecera del TDA Pila_max_cola
  * 
  * Gestiona una pila de elementos que almacena además el máximo de la pila. Para
  * su implementación, usaremos la implementación de la cola (Módulo cola) concedida
@@ -18,7 +18,7 @@
  * 
  * Una estructura @e E del tipo de dato abstracto ElementoPila sobre un dominio
  * @e Tbase es un par de datos de tipo Tbase que serán posteriormente parte de la
- * clase @e Pila_max_cola, y que nos indicarán el @e elemento que se apila, y el
+ * clase @e Pila_max, y que nos indicarán el @e elemento que se apila, y el
  * @e máximo elemento que podemos encontrar en la pila hasta la inserción del mismo.
  * 
  * @author Fernando Luque
@@ -60,7 +60,7 @@ std::ostream& operator<<(std::ostream& out, const ElementoPila<Tbase>& elemento)
  * @date Noviembre 2020
  */
 template <typename Tbase>
-class Pila_max_cola {
+class Pila_max {
     private:
     Cola <ElementoPila<Tbase>> pila;     ///< Elemento que almacenará los datos de tipo ElementoPila
 
@@ -70,21 +70,21 @@ class Pila_max_cola {
      * 
      * Indicamos en la lista de inicialización la llamada al constructor por defecto de la clase Cola
      */
-    Pila_max_cola() = default;
+    Pila_max() = default;
     /**
      * @brief Constructor de copia
      * 
      * Indicaremos en la lista de inicialización que se haga una llamada al constructor de copia de la 
      * clase Cola
      */
-    Pila_max_cola(const Pila_max_cola<Tbase>& otra):
+    Pila_max(const Pila_max<Tbase>& otra):
         pila(otra.pila){};
     /**
      * @brief Destructor por defecto
      * 
      * No necesita ninguna implementación pues usará el destructor de la clase Cola
      */
-    ~Pila_max_cola() = default;
+    ~Pila_max() = default;
 
     /**
      * @brief Operador de asignación
@@ -93,7 +93,7 @@ class Pila_max_cola {
      * 
      * No necesita ninguna implementación porque usará también la asignación de la clase Cola
      */
-    Pila_max_cola& operator=(const Pila_max_cola<Tbase>& otra) = default;
+    Pila_max& operator=(const Pila_max<Tbase>& otra) = default;
     
     /**
      * @brief Comprueba si la cola está vacía

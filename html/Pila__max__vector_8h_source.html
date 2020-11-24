@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TDA Pila_max: Fichero Fuente inc/Pila_max_vector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA Pila_max
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pila_max_vector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Pila__max__vector_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __Pila_max_vector_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __Pila_max_vector_H__</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tbase&gt;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structElementoPila.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structElementoPila.html">ElementoPila</a> {</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structElementoPila.html#a2c210252f4d74fc9975cba3784a7b0e3">   29</a></span>&#160;    Tbase <a class="code" href="structElementoPila.html#a2c210252f4d74fc9975cba3784a7b0e3">elemento</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structElementoPila.html#a6e6e77f455669318e9e6fe5e4f52c9bc">   30</a></span>&#160;    Tbase <a class="code" href="structElementoPila.html#a6e6e77f455669318e9e6fe5e4f52c9bc">maximo</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tbase&gt;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const ElementoPila&lt;Tbase&gt;&amp; <a class="code" href="structElementoPila.html#a2c210252f4d74fc9975cba3784a7b0e3">elemento</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tbase&gt;</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classPila__max.html">   63</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPila__max.html">Pila_max</a> {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::vector &lt;ElementoPila&lt;Tbase&gt;&gt; pila;     </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classPila__max.html">Pila_max</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classPila__max.html#ab5710c39c42d4d089736bba758c54f69">   80</a></span>&#160;    <a class="code" href="classPila__max.html#ab5710c39c42d4d089736bba758c54f69">Pila_max</a>(<span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max&lt;Tbase&gt;</a>&amp; otra):</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        pila(otra.pila){};</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ~<a class="code" href="classPila__max.html">Pila_max</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classPila__max.html">Pila_max</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max&lt;Tbase&gt;</a>&amp; otra) = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> vacia() <span class="keyword">const</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="structElementoPila.html">ElementoPila&lt;Tbase&gt;</a>&amp; tope();</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> <a class="code" href="structElementoPila.html">ElementoPila&lt;Tbase&gt;</a>&amp; tope() <span class="keyword">const</span>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> poner(<span class="keyword">const</span> Tbase&amp; nuevo);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> quitar();</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">// Instanciación implícita</span></div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#include &quot;Pila_max_vector.cpp&quot;</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structElementoPila_html"><div class="ttname"><a href="structElementoPila.html">ElementoPila</a></div><div class="ttdoc">T.D.A ElementoPila. </div><div class="ttdef"><b>Definition:</b> Pila_max_vector.h:28</div></div>
+<div class="ttc" id="classPila__max_html"><div class="ttname"><a href="classPila__max.html">Pila_max</a></div><div class="ttdoc">TDA Pila_max_vector. </div><div class="ttdef"><b>Definition:</b> Pila_max_vector.h:63</div></div>
+<div class="ttc" id="structElementoPila_html_a6e6e77f455669318e9e6fe5e4f52c9bc"><div class="ttname"><a href="structElementoPila.html#a6e6e77f455669318e9e6fe5e4f52c9bc">ElementoPila::maximo</a></div><div class="ttdeci">Tbase maximo</div><div class="ttdef"><b>Definition:</b> Pila_max_vector.h:30</div></div>
+<div class="ttc" id="structElementoPila_html_a2c210252f4d74fc9975cba3784a7b0e3"><div class="ttname"><a href="structElementoPila.html#a2c210252f4d74fc9975cba3784a7b0e3">ElementoPila::elemento</a></div><div class="ttdeci">Tbase elemento</div><div class="ttdef"><b>Definition:</b> Pila_max_vector.h:29</div></div>
+<div class="ttc" id="classPila__max_html_ab5710c39c42d4d089736bba758c54f69"><div class="ttname"><a href="classPila__max.html#ab5710c39c42d4d089736bba758c54f69">Pila_max::Pila_max</a></div><div class="ttdeci">Pila_max(const Pila_max&lt; Tbase &gt; &amp;otra)</div><div class="ttdoc">Constructor de copia. </div><div class="ttdef"><b>Definition:</b> Pila_max_vector.h:80</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

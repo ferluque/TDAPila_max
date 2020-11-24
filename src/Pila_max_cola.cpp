@@ -1,22 +1,22 @@
 using namespace std;
 
 template <typename Tbase>
-bool Pila_max_cola<Tbase>::vacia() const {
+bool Pila_max<Tbase>::vacia() const {
     return pila.vacia();
 }
 
 template <typename Tbase>
-ElementoPila<Tbase>& Pila_max_cola<Tbase>::tope() {
+ElementoPila<Tbase>& Pila_max<Tbase>::tope() {
     return pila.frente();
 }
 
 template <typename Tbase>
-const ElementoPila<Tbase>& Pila_max_cola<Tbase>::tope() const {
+const ElementoPila<Tbase>& Pila_max<Tbase>::tope() const {
     return pila.frente();
 }
 
 template <typename Tbase>
-void Pila_max_cola<Tbase>::poner(const Tbase& nuevo) {
+void Pila_max<Tbase>::poner(const Tbase& nuevo) {
     ElementoPila<Tbase> nuevo_elemento;
     nuevo_elemento.elemento = nuevo;
     if (pila.vacia())
@@ -33,7 +33,7 @@ void Pila_max_cola<Tbase>::poner(const Tbase& nuevo) {
 }
 
 template <typename Tbase>
-void Pila_max_cola<Tbase>::quitar() {
+void Pila_max<Tbase>::quitar() {
     pila.quitar();
 }
 

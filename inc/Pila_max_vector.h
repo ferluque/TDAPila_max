@@ -1,6 +1,6 @@
 /**
- * @file Pila_max_vector.h
- * @brief Fichero cabecera del TDA Pila_max_vector
+ * @file Pila_max.h
+ * @brief Fichero cabecera del TDA Pila_max
  * 
  * Gestiona una pila de elementos que almacena además el máximo de la pila. Para
  * su implementación, usaremos los vectores dinámicos de la STL
@@ -18,7 +18,7 @@
  * 
  * Una estructura @e E del tipo de dato abstracto ElementoPila sobre un dominio
  * @e Tbase es un par de datos de tipo Tbase que serán posteriormente parte de la
- * clase @e Pila_max_vector, y que nos indicarán el @e elemento que se apila, y el
+ * clase @e Pila_max, y que nos indicarán el @e elemento que se apila, y el
  * @e máximo elemento que podemos encontrar en la pila hasta la inserción del mismo.
  * 
  * @author Fernando Luque
@@ -60,7 +60,7 @@ std::ostream& operator<<(std::ostream& out, const ElementoPila<Tbase>& elemento)
  * @date Noviembre 2020
  */
 template <typename Tbase>
-class Pila_max_vector {
+class Pila_max {
     private:
     std::vector <ElementoPila<Tbase>> pila;     ///< Elemento que almacenará los datos de tipo ElementoPila
 
@@ -70,21 +70,21 @@ class Pila_max_vector {
      * 
      * No necesita ninguna implementación pues usará el constructor de la clase vector de la STL
      */
-    Pila_max_vector() = default;
+    Pila_max() = default;
     /**
      * @brief Constructor de copia
      * 
      * Indicaremos en la lista de inicialización que se haga una llamada al constructor de copia de la 
      * clase vector de la STL
      */
-    Pila_max_vector(const Pila_max_vector<Tbase>& otra):
+    Pila_max(const Pila_max<Tbase>& otra):
         pila(otra.pila){};
     /**
      * @brief Destructor por defecto
      * 
      * No necesita ninguna implementación pues usará el destructor de la clase vector de la STL
      */
-    ~Pila_max_vector() = default;
+    ~Pila_max() = default;
 
     /**
      * @brief Operador de asignación
@@ -93,7 +93,7 @@ class Pila_max_vector {
      * 
      * No necesita ninguna implementación porque usará también la asignación de la clase vector de la STL
      */
-    Pila_max_vector& operator=(const Pila_max_vector<Tbase>& otra) = default;
+    Pila_max& operator=(const Pila_max<Tbase>& otra) = default;
     
     /**
      * @brief Comprueba si la cola está vacía

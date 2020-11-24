@@ -1,0 +1,47 @@
+\hypertarget{Pila__max__vector_8h}{}\section{Referencia del Archivo inc/\+Pila\+\_\+max\+\_\+vector.h}
+\label{Pila__max__vector_8h}\index{inc/\+Pila\+\_\+max\+\_\+vector.\+h@{inc/\+Pila\+\_\+max\+\_\+vector.\+h}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Pila\+\_\+max\+\_\+vector.\+cpp\char`\"{}}\newline
+Dependencia gráfica adjunta para Pila\+\_\+max\+\_\+vector.\+h\+:
+% FIG 0
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structElementoPila}{Elemento\+Pila$<$ Tbase $>$}
+\begin{DoxyCompactList}\small\item\em T.\+D.\+A \hyperlink{structElementoPila}{Elemento\+Pila}. \end{DoxyCompactList}\item 
+class \hyperlink{classPila__max}{Pila\+\_\+max$<$ Tbase $>$}
+\begin{DoxyCompactList}\small\item\em T\+DA Pila\+\_\+max\+\_\+vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Tbase $>$ }\\std\+::ostream \& \hyperlink{Pila__max__vector_8h_ad9d2d9089bb2cb37336fbff1bb79dd6b}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{structElementoPila}{Elemento\+Pila}$<$ Tbase $>$ \&elemento)
+\begin{DoxyCompactList}\small\item\em Operador de salida por flujo de datos del tipo {\itshape \hyperlink{structElementoPila}{Elemento\+Pila}} sobre un dominio {\itshape Tbase}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{Pila__max__vector_8h_ad9d2d9089bb2cb37336fbff1bb79dd6b}\label{Pila__max__vector_8h_ad9d2d9089bb2cb37336fbff1bb79dd6b}} 
+\index{Pila\+\_\+max\+\_\+vector.\+h@{Pila\+\_\+max\+\_\+vector.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pila\+\_\+max\+\_\+vector.\+h@{Pila\+\_\+max\+\_\+vector.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename Tbase $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \hyperlink{structElementoPila}{Elemento\+Pila}$<$ Tbase $>$ \&}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Operador de salida por flujo de datos del tipo {\itshape \hyperlink{structElementoPila}{Elemento\+Pila}} sobre un dominio {\itshape Tbase}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & El flujo de salida \\
+\hline
+{\em elemento} & El elemento a introducir en el flujo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El flujo para sentencias concatenadas 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Debe estar implementado el flujo de salida para la clase (o tipo de dato) Tbase 
+\end{DoxyPrecond}
